@@ -168,7 +168,7 @@ n_rectangles = Sum(delta_x * fx_i, (i, 1, n)).doit()
 area = limit(n_rectangles, n, oo)
 # print(area) # prints 4/3
 
-"""Excercises"""
+"""Exercises"""
 # 1. Is the value 62.6738 rational or irrational? Why or why not?
 # Rational because it has a finite number of decimals, and therefore can be expressed as a fraction 626_738 / 10_000
 
