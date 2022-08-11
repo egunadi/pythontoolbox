@@ -67,14 +67,14 @@ result = limit(f, n, oo)
 # print(result.evalf()) # 2.71828182845905
 
 """1-17. a derivative calculator in python"""
-def derivative_x(f, x, step_size):
+def get_derivative_x(f, x, step_size):
   m = (f(x + step_size) - f(x)) / ((x + step_size) - x)
   return m
 
 def my_function(x):
   return x**2
 
-slope_at_2 = derivative_x(my_function, 2, .00001)
+slope_at_2 = get_derivative_x(my_function, 2, .00001)
 # print(slope_at_2) # prints 4.000010000000827
 
 """1-18. calculating a derivative in sympy"""
