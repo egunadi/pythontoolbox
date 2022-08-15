@@ -337,4 +337,5 @@ probability_11_641_or_more = 1.0 - norm.cdf(11_641, mean, std_dev)
 # p_value = probability_up_to_9_049 + probability_11_641_or_more
 p_value = probability_11_641_or_more * 2 # take advantage of symmetry
 
-# print(p_value) # 0.01888333596496139
+# print(p_value) # 0.01888333596496139, which suggests the campaign worked
+
