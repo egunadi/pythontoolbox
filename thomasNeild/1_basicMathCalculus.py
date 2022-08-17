@@ -26,7 +26,8 @@ summation = sum(10*x[i] for i in range(0, n))
 
 """with sympy"""
 i, n = symbols('i n')
-summation = Sum(2*i, (i,1,n))
+# https://docs.sympy.org/latest/modules/concrete.html
+summation = Sum(2*i, (i, 1, n)) 
 up_to_5 = summation.subs(n, 5) # Sum() is end inclusive
 # print(up_to_5.doit()) # 30
 
