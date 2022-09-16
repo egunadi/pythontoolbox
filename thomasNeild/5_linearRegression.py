@@ -434,7 +434,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=1/3)
 model = LinearRegression()
 model.fit(X_train, Y_train)
 result = model.score(X_test, Y_test)
-# print("r^2: %.3f" % result) # r^2: 0.786
+# print(f"r^2: {result:.3f}") # r^2: 0.850
 
 """5-22. using three-fold cross-validation for a linear regression"""
 from sklearn.model_selection import KFold, cross_val_score
@@ -443,7 +443,7 @@ kfold = KFold(n_splits=3, random_state=7, shuffle=True)
 model = LinearRegression()
 results = cross_val_score(model, X, Y, cv=kfold)
 # print(results)
-# print("MSE: mean=%.3f (stdev-%.3f)" % (results.mean(), results.std()))
+# print(f"MSE: mean={results.mean():.3f} (stdev-{results.std():.3f})")
 
 # OUTPUT:
 # [0.82514286 0.64591573 0.2975653 ]
@@ -459,7 +459,7 @@ model = LinearRegression()
 results = cross_val_score(model, X, Y, cv=shufflesplit)
 
 # print(results)
-# print("MSE: mean=%.3f (stdev-%.3f)" % (results.mean(), results.std()))
+# print(f"MSE: mean={results.mean():.3f} (stdev-{results.std():.3f})")
 
 # OUTPUT:
 # [0.82514286 0.23552344 0.92653455 0.91620594 0.73260142 0.8698865
@@ -626,7 +626,7 @@ kfold = KFold(n_splits=3, random_state=7, shuffle=True)
 model = LinearRegression()
 results = cross_val_score(model, X, Y, cv=kfold)
 # print(results)
-# print("MSE: mean=%.3f (stdev-%.3f)" % (results.mean(), results.std()))
+# print(f"MSE: mean={results.mean():.3f} (stdev-{results.std():.3f})")
 
 # OUTPUT:
 # [0.86119665 0.78237719 0.85733887]

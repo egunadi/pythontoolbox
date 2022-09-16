@@ -278,7 +278,7 @@ kfold = KFold(n_splits=3, random_state=7, shuffle=True)
 model = LogisticRegression(penalty='none')
 results = cross_val_score(model, X, Y, cv=kfold)
 
-# print("Accuracy Mean: %.3f (stdev=%.3f)" % (results.mean(), results.std()))
+# print(f"Accuracy Mean: {results.mean():.3f} (stdev={results.std():.3f})")
 
 # OUTPUT
 # Accuracy Mean: 0.611 (stdev=0.000)
@@ -310,7 +310,7 @@ matrix = confusion_matrix(y_true=Y_test, y_pred=prediction)
 
 """6-18. using the AUC as the scikit-learn parameter"""
 results = cross_val_score(model, X, Y, cv=kfold, scoring='roc_auc')
-# print("AUC: %.3f (%.3f)" % (results.mean(), results.std()))
+# print(f"AUC: {results.mean():.3f} ({results.std():.3f})")
 
 # OUTPUT
 # AUC: 0.791 (0.051)
@@ -336,7 +336,7 @@ kfold = KFold(n_splits=3, random_state=7, shuffle=True)
 model = LogisticRegression(penalty='none')
 results = cross_val_score(model, X, Y, cv=kfold)
 
-# print("Accuracy Mean: %.3f (stdev=%.3f)" % (results.mean(), results.std()))
+# print(f"Accuracy Mean: {results.mean():.3f} (stdev={results.std():.3f})")
 
 # OUTPUT
 # Accuracy Mean: 1.000 (stdev=0.000)
