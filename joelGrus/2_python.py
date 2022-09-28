@@ -89,3 +89,11 @@ names_list = ["Alice", "Bob", "Charlie", "Debbie"]
 
 # for i, name in enumerate(names_list):
 #   print(f"name {i} is {name}")
+
+"""
+2-3. things to avoid (if possible)
+
+(A) `partial`, `map`, `reduce`, `filter` should be avoided since they can be replaced with more Pythonic constructs like list comprehensions, `for` loops, etc.
+
+(B) instead of using `args` and `kwargs` it's better to be explicit about what sorts of arguments are required
+"""
