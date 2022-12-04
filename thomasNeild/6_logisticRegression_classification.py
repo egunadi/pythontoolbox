@@ -49,7 +49,7 @@ model.fit(X, Y)
 # print(model.intercept_.flatten()) # [-3.17576395]
 
 """6-4. calculating the joint likelihood of observing all the points for a given logistic regression"""
-# import points with .itertuples()
+# import points with .itertuples() so we can loop over the dataframe
 points = pd.read_csv('data/simple_logistic_regression.csv', delimiter=",").itertuples()
 
 b0 = -3.17576395

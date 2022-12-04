@@ -30,7 +30,7 @@ b = fit.intercept_.flatten()
 # plt.show()
 
 """5-2. calculating the residuals for a given line and data"""
-# import points with .itertuples()
+# import points with .itertuples() so we can loop over the dataframe
 points = pd.read_csv('data/single_independent_variable_linear_small.csv', delimiter=",").itertuples()
 
 # test with a given line
